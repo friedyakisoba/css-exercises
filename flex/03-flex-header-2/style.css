@@ -73,6 +73,7 @@ ul {
 }
 
 
+/* grouped left and right headers for a more readable and maintainable code */
 .left,
 .right {
   gap: 16px;
