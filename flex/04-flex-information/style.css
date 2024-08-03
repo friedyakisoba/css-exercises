@@ -45,3 +45,23 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* solution  --close but no cigar
+body {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 32px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.info {
+  max-width: 200px;
+} */
+
