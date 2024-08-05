@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,9 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+   padding: 8px 16px; /*missed the 16px  */
+  /* font-weight: 600;
+  text-align: center;  not needed */
 }
 
 input {
@@ -24,3 +29,78 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+.header,
+.footer{
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+
+  padding: 16px; /* did not add this */
+
+  /* correct answer
+  .header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+} */
+  /* border: 1px solid black; debugging purposes*/
+}
+
+/* .left-links,
+.right-links{
+   border: 1px solid black;
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  padding: 10px;
+  color: gray;
+}
+more effient way below
+close but no cigar  */
+
+
+ ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 16px;
+ }
+
+
+.footer {
+  background-color: #eeeeee;
+  /* correct */
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+
+  /* correct */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+   gap: 16px; /*gap was 1 px short(close) */
+  text-align: center;
+ } /* got it mostly right though*/
+
+
+/* .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center ;
+  align-items: center;
+} 
+  over complicated it (padding was the only one needed to adjust)*/
+
+
+
